@@ -1,0 +1,48 @@
+
+Overview
+========
+
+This puppet module manages grub
+
+Variables
+=========
+
+
+Classes
+=======
+
+grub
+----
+
+The grub class performs all steps needed to the use of grub such as package
+installation
+
+
+Defines
+=======
+
+grub::
+----------
+
+Add a rule to the ferm rules.d directory
+
+Variables used :
+	$host = false, 
+	$table="filter", 
+	$chain="INPUT", 
+	$rule, 
+	$description="", 
+	$prio="00", 
+	$notarule=false
+
+
+Licensing
+=========
+
+This puppet module is licensed under the GPL version 3 or later. Redistribution
+and modification is encouraged.
+
+The GPL version 3 license text can be found in the "LICENSE" file accompanying
+this puppet module, or at the following URL:
+
+http://www.gnu.org/licenses/gpl-3.0.html
