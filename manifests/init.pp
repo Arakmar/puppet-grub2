@@ -1,4 +1,4 @@
-class grub {
+class grub2 {
 
 	$grub_default = $grub_default ? {
 		""      => 0,
@@ -68,7 +68,7 @@ class grub {
 
 	file {
 		"/etc/default/grub":
-			content  => template("grub/grub.erb"),
+			content  => template("grub2/grub.erb"),
 			owner   => root,
 			group   => root,
 			require => Package["grub-pc"],
